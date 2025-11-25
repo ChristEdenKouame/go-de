@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jeu de dés</title>
+</head>
+
+<body class="flex flex-col min-h-screen mx-auto text-center bg-orange-50 text-zinc-700">
+
+    <header class="flex items-center justify-between gap-5 px-20 py-2 bg-sky-700">
+        <div class="text-3xl font-bold text-zinc-100">GoDé</div>
+        <div class="">
+            <img class="rounded-lg" src="images/dé.png" alt="image dé" width="60px">
+        </div>
+    </header>
+
+    <section class="flex flex-col items-center justify-center flex-grow mx-auto">
+
+        <div>
+            <h1 class="pb-2 font-semibold text-center text-7xl">Jeu de dé en ligne</h1>
+            <p class="text-xl text-center">Appuyez sur <span class="font-bold">lancer</span> pour jouer</p>
+        </div>
+
+        <div class="pt-10">
+            <img id="afficherDe" src="images/de1.png" alt="image dé" width="120px">
+            <div id="afficherResultat" class="pb-3 afficherResultat text-8xl">1</div>
+            <button id="btnLancer"
+                class="px-2 text-2xl text-center border-2 rounded-md shadow-lg border-zinc-600 bg-zinc-100 hover:bg-zinc-200">
+                Lancer
+            </button>
+        </div>
+
+    </section>
+
+    <footer class="mt-auto mb-2">
+        <p>© 2024 Kouamé Christ Eden. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
