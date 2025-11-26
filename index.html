@@ -13,24 +13,25 @@
 
     <header class="flex items-center justify-between gap-5 px-5 py-2 xl:px-10 bg-sky-700">
         <div class="text-2xl font-bold xl:text-3xl text-zinc-100">GoDé</div>
-        <div class="">
-            <img class="rounded-lg" src="images/dé.png" alt="image dé" width="50px">
+        <div class="w-12 h-12 text-4xl">
+            🎲
         </div>
     </header>
 
     <section
-        class="flex flex-col items-center justify-center px-5 mx-auto my-10 border-2 border-gray-300 shadow-xl grow rounded-xl">
+        class="flex flex-col items-center justify-center px-5 mx-auto my-10 border border-gray-300 shadow-xl grow rounded-xl">
 
         <div>
             <h1 class="pb-5 text-4xl font-black text-center xl:text-6xl">Jeu de dé en ligne</h1>
-            <p class="text-xl text-center">Appuyez sur <span class="font-bold text-sky-700">Lancer</span> pour jouer</p>
+            <p class="text-xl text-center animate-typing">Appuyez sur <span class="font-bold text-sky-700">Lancer</span>
+                pour jouer</p>
         </div>
 
         <div class="pt-10">
-            <img id="afficherDe" src="images/de1.png" alt="image dé" width="120px">
+            <img id="afficherDe" src="images/de1.png" alt="image dé" width="120px" class="animate-bounce">
             <div id="afficherResultat" class="pb-3 afficherResultat text-8xl">1</div>
             <button id="btnLancer"
-                class="px-3 text-2xl text-center transition duration-300 transform border-2 rounded-md shadow-lg text-orange-50 border-zinc-300 bg-sky-700 hover:bg-sky-800 hover:scale-105 hover:cursor-pointer animate-bounce">
+                class="px-3 text-2xl text-center transition duration-300 transform border-2 rounded-md shadow-lg text-orange-50 border-zinc-300 bg-sky-700 hover:bg-sky-800 hover:scale-105 hover:cursor-pointer ">
                 Lancer
             </button>
     </section>

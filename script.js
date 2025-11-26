@@ -4,31 +4,24 @@ const btnLancer = document.querySelector("#btnLancer");
 
 //Initialisation du dé a 1
 let resultat = 1;
+const arrayDe = ["images/de1.png", "images/de2.png", "images/de3.png", "images/de4.png", "images/de5.png", "images/de6.png"];
 
 btnLancer.addEventListener("click", () => {
-  // Résultat aléatoire entre 1 et 6
-  resultat = Math.floor((Math.random() * 6) + 1);
-  afficherResultat.innerHTML = resultat;
-  switch (resultat) {
-    case 1:
-      afficherDe.src = "images/de1.png";
-      break;
-    case 2:
-      afficherDe.src = "images/de2.png";
-      break;
-    case 3:
-      afficherDe.src = "images/de3.png";
-      break;
-    case 4:
-      afficherDe.src = "images/de4.png";
-      break;
-    case 5:
-      afficherDe.src = "images/de5.png";
-      break;
-    case 6:
-      afficherDe.src = "images/de6.png";
-      break;
-    default:
-      break;
-  }
+  let cpt = 0;
+  const interval = setInterval(() => {
+
+    const random = Math.floor((Math.random() * 6) + 1);
+
+    afficherDe.src = arrayDe[random - 1];
+    afficherResultat.innerHTML = random;
+
+    setTimeout(() => {
+    }, 50);
+
+    cpt++;
+
+    if (cpt >= 10) {
+      clearInterval(interval);
+    }
+  }, 100)
 });
